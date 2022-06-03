@@ -1,0 +1,88 @@
+@import url(../css/animate.css);
+@import url(../css/fontawesome-all.css);
+@import url(../css/common.css);
+/* ========================= */
+.covid-sec{
+    margin: 55px 0;
+}
+.covid-sec h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.product-card{
+    background-color: #f9fafb;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    transition:transform 0.3s ease;
+    transform: scale(1);
+    display: flex;
+    flex-direction: column;
+}
+.product-card:hover{
+    transform: scale(1.1);
+}
+.product-card h4{
+    font-size: 17px;
+    flex-shrink: 0;
+}
+.product-card figure{
+    background-color: #fff;
+}
+.product-card figure img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+.product-card > label{
+    flex-grow: 1;
+}
+.product-card a{
+    display: block;
+    border: 1px solid #617dff;
+    padding: 8px 5px;
+    text-align: center;
+    margin-top: 15px;
+    color: #ff7939;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+.lab-form{
+    margin: 45px 0;
+}
+.lab-form h3{
+    font-size: 16px;
+    margin:20px 0 10px;
+}
+.lab-form .form-control{
+    margin-bottom: 15px;
+}
+.lab-form-inr{
+    border: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+
+
+
+
+@media (max-width:991px) {
+    .product-card{transform: initial;margin-bottom: 15px; height: calc(100% - 15px);}
+    .product-card:hover{transform: initial;}
+    .covid-sec {margin: 30px 0;}
+    .custom-nav .navbar-collapse {border-top: 1px solid #ddd; text-align: center;}
+    .custom-nav .navbar-collapse ul.custom__menu li ul{position: static; display: none;}
+    .custom-nav .navbar-collapse ul.custom__menu li:hover ul{display: block;}
+    
+    .lab-form-inr{padding: 0 20px 20px;}
+    .live-demo-form-left{ margin-bottom: 20px; order: 1;}
+    .live-demo-form-right{order: 2;}
+    .lab-form {margin: 25px 0;}
+}
